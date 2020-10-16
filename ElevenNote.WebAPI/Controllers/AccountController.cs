@@ -333,7 +333,8 @@ namespace ElevenNote.WebAPI.Controllers
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
-     ConfirmPassword       if (!result.Succeeded)
+            
+                if (!result.Succeeded)
             {
                 return GetErrorResult(result);
             }
