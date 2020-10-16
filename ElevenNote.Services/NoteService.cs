@@ -49,6 +49,7 @@ namespace ElevenNote.Services
                                     CreatedUtc = e.CreatedUtc
                                 }
                         );
+                return query.ToArray();
             }
         }
     }
